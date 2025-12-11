@@ -1,0 +1,98 @@
+/* Shared CSS across all pages */
+body,html {
+    box-sizing: border-box;
+    height:100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    /* max-width: 1200px; */
+    /* min-height: 100vh; */
+}
+.content {
+    flex: 1;
+}
+
+header {
+    background: #4a60de;
+    color: #fff;
+    /* padding: 20px; */
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+header h1 {
+    margin: 0;
+}
+.title-page{
+    /* background-color: #808dec; */
+    /* border: 1px solid rgb(206, 186, 186); */
+    /* border-radius: 5px; */
+    color: rgb(238, 255, 0);
+    padding: 0 20px;
+    margin: 5px;}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+nav ul li:hover a{
+    color: #de4a7b;
+    background-color:#6373d2 ;
+    /* border-radius: 5px; */
+    /* padding: 5px 10px; */
+}
+/* nav ul li {
+    
+    
+    padding: 5px 10px;
+} */
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(206, 186, 186);
+    background-color: #566bdf;
+}
+footer {
+    background: #4a60de;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    }
+
+    @media (max-width: 600px) {
+        header { flex-direction: column; text-align: center; padding: 10px;}
+        nav ul { flex-wrap: wrap; justify-content: center; gap: 10px; }
+        img { max-width: 100%; height: auto; }
+        section { padding: 10px; }
+        p { font-size: 16px; }
+        .title-page {
+            /* font-size: 48px; */
+            margin-bottom: 15px;
+            display:block;
+            font-size: 36px;
+        }
+        .content {
+            display: block;
+        }
+        .bio-img{
+            width: 100%;
+            float: none;
+        }
+        nav ul li {
+            margin-bottom: 5px;
+        }
+        nav ul li a{
+            font-size: 10px;
+        }
+    }
+    
