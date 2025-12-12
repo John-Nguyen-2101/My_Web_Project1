@@ -1,10 +1,13 @@
 /* Contact page styling */
 .contact {
     padding: 20px;
-    width: 40%;
-    margin: auto
+    max-width: 600px;   /* đẹp trên desktop */
+    width: 100%;
+    margin: auto;
 }
+
 form {
+    /* align-self: center; */
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -13,8 +16,8 @@ form {
     border-radius: 5px;
 }
 button {
-    margin-left: 40%;
-    width: 100px;
+    align-self: center;
+    width: 120px;
     padding: 10px;
     cursor: pointer;
     border: 1px solid #9a9ca3;
@@ -31,3 +34,4 @@ input
 textarea{
    height: 100px;
 }
+
